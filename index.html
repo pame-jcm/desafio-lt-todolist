@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To Do List</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/check.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    
+        <div class="bg-pastel text-white">
+            <h1 class="px-5 pt-3">Todo List</h1>
+            <hr>
+        </div>
+        <div class="container">
+            <h3>Nueva Tarea</h3>
+            <div class="input-group mb-3">
+                <input id="inputTarea" type="text" class="form-control" placeholder="Ingresar Tarea..." aria-label="Ingresar Tarea" aria-describedby="basic-addon1">
+                <button id="btnAgregarTarea" type="button" class="btn btn-pastel text-white">Agregar</button>
+            </div>
+        
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <span id="spanTotal" class="text-center border border-pastel rounded-top w-50 py-1">Total:0</span>
+                        <span id="spanRealizadas" class="text-center border border-top-0 border-pastel rounded-bottom w-50 py-1">Realizadas:0</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-9">
+                    <table id="idTblTarea" class="table">
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Tarea</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+
+    <div id="modalInfo" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Información</h5>
+              <button id="myClose" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="idMessage"></p>
+            </div>
+            <div class="modal-footer">
+              <button id="myButton" type="button" class="btn btn-pastel text-white" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <script src="assets/js/funciones.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
